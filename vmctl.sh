@@ -87,7 +87,7 @@ function vm_save()
 #   - 1 on error
 function vmctl_help()
 {
-    echo "use: $0 install hdd-gz-path | remove | active | save"
+    (>2& echo "use: $0 install hdd-gz-path | remove | active | save")
 }
 
 # swtich command
