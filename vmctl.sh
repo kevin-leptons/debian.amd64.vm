@@ -51,7 +51,7 @@ function vm_install()
 # ret       : 
 #   - 0 on success
 #   - 1 on error
-function vm_active()
+function vm_start()
 {
     if ! vboxmanage list runningvms | grep $vm_name > /dev/null; then
         vboxmanage startvm "$vm_name" --type headless
@@ -91,17 +91,27 @@ function vmctl_help()
 # arg       : none
 #   - 0 on success
 #   - 1 on error
-function vm_connect()
+function vm_ssh()
 {
     ssh kevin@debian.amd64.vm
+}
+
+# spec      : show display of virtual machine
+# arg       : none
+#   - 0 on success
+#   - 1 on error
+function vm_display()
+{
+    virtualbox --startvm "$vm_name" 
 }
 
 # swtich command
 case $1 in
     "install") vm_install $2;;
     "remove") vm_remove;;
-    "active") vm_active;;
-    "connect") vm_connect;;
+    "start") vm_start;;
+    "ssh") vm_ssh;;
+    "display") vm_display;;
     "save") vm_save;;
     *) vmctl_help;;
 esac
