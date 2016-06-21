@@ -1,6 +1,12 @@
 # debian.amd64.vm
 virtual machine of debian 8 amd64
 
+information
+
+- os: debian 8
+- hdd file compress: ~1GB
+- hdd file extract: ~4GB
+
 # installation
 
 ## download virtual machine hdd
@@ -37,7 +43,7 @@ cd debian.amd64.vm.git
 ./vmctl active
 ```
 
-## save virtual machine and stop
+## save then virtual machine
 ```shell
 ./vmctl save
 ```
