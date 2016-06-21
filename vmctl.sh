@@ -12,6 +12,8 @@ vm_name="debian.amd64"
 vm_cpus="2"
 vm_ram="512"
 vm_hdd_path="vms/debian.amd64.vdi"
+vm_user="dev"
+vm_ipaddr="192.168.1.4"
 
 # spec      : install virtual machine
 # arg       :
@@ -94,7 +96,7 @@ function vmctl_help()
 #   - 1 on error
 function vm_ssh()
 {
-    ssh kevin@debian.amd64.vm
+    ssh "$vm_user@$vm_ipaddr"
 }
 
 # spec      : show display of virtual machine

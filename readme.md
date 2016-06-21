@@ -7,6 +7,8 @@ information
 - virtual machine host: virtual box
 - hdd file compress: ~1GB
 - hdd file extract: ~4GB
+- root user password: root
+- dev user password: dev
 
 # installation
 
