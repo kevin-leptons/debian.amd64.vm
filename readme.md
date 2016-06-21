@@ -27,13 +27,13 @@ cd debian.amd64.vm.git
 
 # this command will extract hdd file to vms/ directory, create new virtual
 # machine with name debian.amd64
-./vmctl install $vm_hdd_gz_path
+./vmctl.sh install $vm_hdd_gz_path
 ```
 
 ## delete virtual machine
 ```shell
 # this command delete virtual machine, does not delete hdd file
-./vmctl remove
+./vmctl.sh remove
 ```
 
 # usage
@@ -41,10 +41,10 @@ cd debian.amd64.vm.git
 
 ## active virtual machine
 ```shell
-./vmctl active
+./vmctl.sh active
 ```
 
 ## save then virtual machine
 ```shell
-./vmctl save
+./vmctl.sh save
 ```
