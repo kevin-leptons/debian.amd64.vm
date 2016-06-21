@@ -56,9 +56,6 @@ function vm_active()
     if ! vboxmanage list runningvms | grep $vm_name > /dev/null; then
         vboxmanage startvm "$vm_name" --type headless
     fi
-
-    # connect
-    ssh kevin@debian.amd64.vm
 }
 
 # spec      : remove virutal machine, does not remove hdd file
@@ -90,11 +87,21 @@ function vmctl_help()
     (>2& echo "use: $0 install hdd-gz-path | remove | active | save")
 }
 
+# spec      : connect to virtual machine by ssh
+# arg       : none
+#   - 0 on success
+#   - 1 on error
+function vm_connect()
+{
+    ssh kevin@debian.amd64.vm
+}
+
 # swtich command
 case $1 in
     "install") vm_install $2;;
     "remove") vm_remove;;
     "active") vm_active;;
+    "connect") vm_connect;;
     "save") vm_save;;
     *) vmctl_help;;
 esac

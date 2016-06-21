@@ -44,6 +44,11 @@ cd debian.amd64.vm.git
 ./vmctl.sh active
 ```
 
+## connect to virtual machine by ssh
+```shell
+./vmctl connect
+```
+
 ## save then virtual machine
 ```shell
 ./vmctl.sh save
