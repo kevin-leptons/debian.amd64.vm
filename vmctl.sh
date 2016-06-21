@@ -22,6 +22,7 @@ vm_hdd_path="vms/debian.amd64.vdi"
 function vm_install() 
 {
     # vm.hdd.install
+    mkdir -vp $vm_dir
     tar -xvf "$1" --directory "$vm_dir"
 
     # vm.create
@@ -86,6 +87,7 @@ function vm_save()
 #   - 1 on error
 function vmctl_help()
 {
+    echo "use: $0 install hdd-gz-path | remove | active | save"
 }
 
 # swtich command
