@@ -53,7 +53,7 @@ cd debian.amd64.vm.git
 ./vmctl display
 ```
 
-## save then virtual machine
+## save then stop virtual machine
 ```shell
 ./vmctl.sh save
 ```
