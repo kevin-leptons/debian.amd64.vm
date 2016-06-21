@@ -4,6 +4,7 @@ virtual machine of debian 8 amd64
 information
 
 - os: debian 8
+- virtual machine host: virtual box
 - hdd file compress: ~1GB
 - hdd file extract: ~4GB
 
