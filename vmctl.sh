@@ -84,7 +84,8 @@ function vm_save()
 #   - 1 on error
 function vmctl_help()
 {
-    (>2& echo "use: $0 install hdd-gz-path | remove | active | save")
+    (>2& echo \
+        "use: $0 install hdd-gz-path | remove | start | ssh | display save")
 }
 
 # spec      : connect to virtual machine by ssh
@@ -102,7 +103,7 @@ function vm_ssh()
 #   - 1 on error
 function vm_display()
 {
-    virtualbox --startvm "$vm_name" 
+    virtualbox --startvm "$vm_name" --no-startvm-errormsgbox --separate
 }
 
 # swtich command

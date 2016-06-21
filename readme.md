@@ -38,15 +38,19 @@ cd debian.amd64.vm.git
 
 # usage
 
-
-## active virtual machine
+## start virtual machine
 ```shell
-./vmctl.sh active
+./vmctl.sh start
 ```
 
 ## connect to virtual machine by ssh
 ```shell
-./vmctl connect
+./vmctl ssh
+```
+
+## show virtual machine display
+```shell
+./vmctl display
 ```
 
 ## save then virtual machine
