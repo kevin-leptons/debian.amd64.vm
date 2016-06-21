@@ -11,7 +11,7 @@ information
 # installation
 
 ## download virtual machine hdd
-because hdd is large file, it is imposible to put it into git directory. i use
+because hdd is large file, it is imposible to put into git directory. i use
 google drive, but we can not get direct link to download. so you must download
 virtual machine hdd by hand. link to download page here 
 [debian.amd64.vdi.tar.gz](https://drive.google.com/open?id=0B6Eqm2oY7b1vZDdYNmRkbmJhMmM)
