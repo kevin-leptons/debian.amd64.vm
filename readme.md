@@ -5,8 +5,7 @@ information
 
 - os: debian 8
 - virtual machine host: virtual box
-- hdd file compress: ~1GB
-- hdd file extract: ~4GB
+- hdd file compress: ~6GB -> ~1.3GB
 - root user password: root
 - dev user password: dev
 
@@ -14,9 +13,9 @@ information
 
 ## download virtual machine hdd
 because hdd is large file, it is imposible to put into git directory. i use
-google drive, but they are not provide direct link to download. 
+google drive to store it, but they are not provide direct link to download. 
 so you must download virtual machine hdd by hand. link to download page here 
-[debian.amd64.vdi.tar.gz](https://drive.google.com/open?id=0B6Eqm2oY7b1vZDdYNmRkbmJhMmM)
+[debian.amd64.vdi.tar.gz](https://drive.google.com/file/d/0B6Eqm2oY7b1vVUtTa1hUdUpSWGc/view?usp=sharing)
 
 after download completed, i denote path to file is `$vm_hdd_gz_path`. it will
 be use to install virtual machine below
@@ -58,4 +57,11 @@ cd debian.amd64.vm.git
 ## save then stop virtual machine
 ```shell
 ./vmctl.sh save
+```
+
+## compress hdd
+```shell
+# make sure save virtual machine before use this command
+# this command will compress current image into vms/debian.amd64.tar.gz
+./vmctl compress
 ```
