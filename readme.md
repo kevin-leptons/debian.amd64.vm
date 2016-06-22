@@ -4,12 +4,16 @@ system for testing
 
 # spec
 
-- os: debian 8
 - virtual machine host: virtual box
+- os: debian 8
+- number of cpus: 2
+- memory: 512MB
 - hdd file compress: ~6GB -> ~1.3GB
 - static ip: 192.168.1.4
 - root user password: root
 - dev user password: dev
+
+![screen](img/screen.jpg)
 
 # installations
 
