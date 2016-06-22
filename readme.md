@@ -17,7 +17,7 @@ system for testing
 because hdd is large file, it is imposible to put into git directory. i use
 google drive to store it, but they are not provide direct link to download. 
 so you must download virtual machine hdd by hand. link to download page here 
-[debian.amd64.vdi.tar.gz](https://drive.google.com/file/d/0B6Eqm2oY7b1vVUtTa1hUdUpSWGc/view?usp=sharing)
+[debian.amd64.tar.gz](https://drive.google.com/file/d/0B6Eqm2oY7b1vVUtTa1hUdUpSWGc/view?usp=sharing)
 
 after download completed, i denote path to file is `$vm_hdd_gz_path`. it will
 be use to install virtual machine below
