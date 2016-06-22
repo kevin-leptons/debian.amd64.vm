@@ -1,15 +1,16 @@
 # debian.amd64.vm
 virtual machine of debian 8 amd64
 
-information
+# spec
 
 - os: debian 8
 - virtual machine host: virtual box
 - hdd file compress: ~6GB -> ~1.3GB
+- static ip: 192.168.1.4
 - root user password: root
 - dev user password: dev
 
-# installation
+# installations
 
 ## download virtual machine hdd
 because hdd is large file, it is imposible to put into git directory. i use

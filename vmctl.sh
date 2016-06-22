@@ -93,8 +93,7 @@ function vm_save()
 #   - 1 on error
 function vmctl_help()
 {
-    (>2& echo \
-        "use: $0 install hdd-gz-path | remove | start | ssh | display save")
+    echo "use: $0 install hdd-gz-path | remove | start | ssh | display | save"
 }
 
 # spec      : connect to virtual machine by ssh
