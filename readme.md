@@ -1,5 +1,6 @@
 # debian.amd64.vm
-virtual machine of debian 8 amd64
+virtual machine of debian 8 amd64. that provide an small gnu/linux operating
+system for testing
 
 # spec
 
