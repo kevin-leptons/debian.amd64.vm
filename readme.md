@@ -4,7 +4,7 @@ system for testing
 
 # spec
 
-- virtual machine host: virtual box
+- emulator: virtual box
 - os: debian 8
 - number of cpus: 2
 - memory: 512MB
