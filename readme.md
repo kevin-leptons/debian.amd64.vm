@@ -8,6 +8,7 @@ system for testing
 - os: debian 8
 - number of cpus: 2
 - memory: 512MB
+- hdd size: 8GB dynamic allocate
 - hdd file compress: ~6GB -> ~1.3GB
 - static ip: 192.168.1.4
 - root user password: root
@@ -28,46 +29,31 @@ be use to install virtual machine below
 
 ## install virtual machine
 ```shell
-# 
+# clone source
 git clone https://github.com/kevin-leptons/debian.amd64.vm.git
 cd debian.amd64.vm.git
 
 # this command will extract hdd file to vms/ directory, create new virtual
 # machine with name debian.amd64
 ./vmctl.sh install $vm_hdd_gz_path
-```
 
-## delete virtual machine
-```shell
-# this command delete virtual machine, does not delete hdd file
-./vmctl.sh remove
-```
-
-# usage
-
-## start virtual machine
-```shell
+# start virtual machine
+# it can take few minutes in first start
 ./vmctl.sh start
-```
 
-## connect to virtual machine by ssh
-```shell
-./vmctl ssh
-```
-
-## show virtual machine display
-```shell
+# make sure that virtual machine start 
+# and os boot into login screen
 ./vmctl display
-```
 
-## save then stop virtual machine
-```shell
+# then you can close display screen 
+# and remote by ssh
+./vmctl ssh
+
+# save virtual machine when work done
 ./vmctl.sh save
 ```
 
-## compress hdd
+# commands
 ```shell
-# make sure save virtual machine before use this command
-# this command will compress current image into vms/debian.amd64.tar.gz
-./vmctl compress
+./vmct install hdd-path | start | display | ssh | save | compress | remove
 ```
